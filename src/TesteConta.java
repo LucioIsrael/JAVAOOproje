@@ -1,3 +1,4 @@
+import domain.*;
 
 public class TesteConta {
 	
@@ -5,7 +6,7 @@ public class TesteConta {
 		Gerente ac = new Gerente();
 		System.out.println(ac.getSalario());
 		
-		ac.inss.getTransporte(ac);
-		ac.inss.Inss(ac);
+		ac.desc.getTransporte(ac);
+		ac.desc.Inss(ac);
 	}	
 }

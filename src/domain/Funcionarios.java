@@ -1,4 +1,6 @@
+package domain;
 
+import utils.CalculaDescontos;
 
 public abstract class Funcionarios {
 
@@ -6,6 +8,11 @@ public abstract class Funcionarios {
 	private String cpf;
 	private double salario = 0.0;
 	
+	public CalculaDescontos desc;
+	
+	public Funcionarios() {
+		this.desc = new CalculaDescontos();
+	}
 	
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -14,9 +21,10 @@ public abstract class Funcionarios {
 		return this.nome;
 	}
 	
-	private void setCpf(String cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+	
 	public String getCpf() {
 		return this.cpf;
 	}

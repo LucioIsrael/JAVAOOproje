@@ -1,7 +1,9 @@
+package utils;
 //Criar uma forma de puxar o valor liquido e tornar opcional o vale transporte e
 //Outros serviços
 
 import java.text.DecimalFormat;
+import domain.Funcionarios;
 
 public class CalculaDescontos {
 
