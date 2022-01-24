@@ -1,11 +1,13 @@
 
 public class AuxiliarAdministrativo extends Funcionarios {
 
-	CalculaINSS inss;
+	CalculaDescontos inss;
 	
 	public AuxiliarAdministrativo() {
-		setSalario(1375.00);
-		this.inss = new CalculaINSS();
+		this.inss = new CalculaDescontos();
 	}
 	
+	public double getSalario() {
+		return super.getSalario() + 1507.00;
+	}
 }

@@ -1,11 +1,14 @@
 
 public class Acougueiro extends Funcionarios {
 	
-	CalculaINSS inss;
+	CalculaDescontos inss;
 	
 	public Acougueiro() {
-		setSalario(1507.00);
-		this.inss = new CalculaINSS();
+		this.inss = new CalculaDescontos();
+	}
+	
+	public double getSalario() {
+		return super.getSalario() + 1507.00;
 	}
 	
   }	

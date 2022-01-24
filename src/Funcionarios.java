@@ -1,9 +1,10 @@
 
+
 public abstract class Funcionarios {
 
 	private String nome;
 	private String cpf;
-	private double salario;
+	private double salario = 0.0;
 	
 	
 	public void setNome(String nome) {
@@ -19,10 +20,8 @@ public abstract class Funcionarios {
 	public String getCpf() {
 		return this.cpf;
 	}
+
 	
-	public void setSalario(double salario) {
-		this.salario = salario;
-	}
 	public double getSalario() {
 		return salario;
 	}

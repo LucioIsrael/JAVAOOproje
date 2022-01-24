@@ -1,11 +1,14 @@
 
 public class Estoquista extends Funcionarios {
 
-	CalculaINSS inss;
+	CalculaDescontos inss;
 	
 	public Estoquista() {
-		setSalario(1315.00);
-		this.inss = new CalculaINSS();
+		this.inss = new CalculaDescontos();
+	}
+	
+	public double getSalario() {
+		return super.getSalario() + 1315.00;
 	}
 	
 }

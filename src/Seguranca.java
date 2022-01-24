@@ -1,11 +1,14 @@
 
 public class Seguranca extends Funcionarios {
 
-	CalculaINSS inss;
+	CalculaDescontos inss;
 	
 	public Seguranca() {
-		setSalario(1539.00);
-		this.inss = new CalculaINSS();
+		this.inss = new CalculaDescontos();
+	}
+	
+	public double getSalario() {
+		return super.getSalario() + 1539.00;
 	}
 	
 }
