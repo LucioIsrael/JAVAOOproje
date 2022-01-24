@@ -1,11 +1,14 @@
 
 public class OperadorDeCaixa extends Funcionarios{
 
-	CalculaINSS inss;
+	CalculaDescontos inss;
 	
 	public OperadorDeCaixa() {
-		setSalario(1228.00);
-		this.inss = new CalculaINSS();
+		this.inss = new CalculaDescontos();
+	}
+	
+	public double getSalario() {
+		return super.getSalario() + 1228.00;
 	}
 	
 }

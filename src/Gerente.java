@@ -1,11 +1,14 @@
 
 public class Gerente extends Funcionarios {
 
-	CalculaINSS inss;
+	CalculaDescontos inss;
 	
 	public Gerente() {
-		setSalario(4670.00 );
-		this.inss = new CalculaINSS();
+		this.inss = new CalculaDescontos();
+	}
+	
+	public double getSalario() {
+		return super.getSalario() + 4670.00;
 	}
 	
 }

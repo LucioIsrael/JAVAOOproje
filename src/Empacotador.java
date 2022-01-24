@@ -1,11 +1,14 @@
 
 public class Empacotador extends Funcionarios {
 	
-	CalculaINSS inss;
+	CalculaDescontos inss;
 	
 	public Empacotador() {
-		setSalario(861.00);
-		this.inss = new CalculaINSS();
+		this.inss = new CalculaDescontos();
+	}
+	
+	public double getSalario() {
+		return super.getSalario() + 1100.00;
 	}
 	
 }
