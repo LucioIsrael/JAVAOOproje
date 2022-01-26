@@ -19,7 +19,7 @@ public abstract class Funcionarios {
 	
 	public void setNome(String nome) {
 		if(nome == null) {
-			throw new NullPointerException("Você deve colocar seu nome");
+			throw new RuntimeException("Você deve colocar seu nome");
 		}
 		this.nome = nome;	
 	}
