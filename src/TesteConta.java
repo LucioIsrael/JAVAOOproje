@@ -7,8 +7,5 @@ public class TesteConta {
 		ac.setNome("Lúcio");
 		System.out.println(ac.getSalario());
 
-		
-		Seguranca sc = new Seguranca();
-		System.out.println(ac.getTotalFuncionarios());
 	}	
 }
