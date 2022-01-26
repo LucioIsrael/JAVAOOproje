@@ -7,15 +7,29 @@ public abstract class Funcionarios {
 	private String nome;
 	private String cpf;
 	private double salario = 0.0;
+	private double salarioLiquido;
 	
 	public CalculaDescontos desc;
 	
-	public Funcionarios() {
+	public double getSalarioLiquido() {
+		return salarioLiquido;
+	}
+
+	public void setSalarioLiquido(double salarioLiquido) {
+		this.salarioLiquido = salarioLiquido;
+	}
+
+	public Funcionarios(String nome, String cpf) {
 		this.desc = new CalculaDescontos();
+		this.nome = nome;
+		this.cpf = cpf;
 	}
 	
 	public void setNome(String nome) {
-		this.nome = nome;
+		if(nome == null) {
+			throw new NullPointerException("Você deve colocar seu nome");
+		}
+		this.nome = nome;	
 	}
 	public String getNome() {
 		return this.nome;
@@ -28,7 +42,6 @@ public abstract class Funcionarios {
 	public String getCpf() {
 		return this.cpf;
 	}
-
 	
 	public double getSalario() {
 		return salario;
