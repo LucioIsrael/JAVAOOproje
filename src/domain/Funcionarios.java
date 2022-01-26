@@ -7,17 +7,9 @@ public abstract class Funcionarios {
 	private String nome;
 	private String cpf;
 	private double salario = 0.0;
-	private double salarioLiquido;
 	
 	public CalculaDescontos desc;
 	
-	public double getSalarioLiquido() {
-		return salarioLiquido;
-	}
-
-	public void setSalarioLiquido(double salarioLiquido) {
-		this.salarioLiquido = salarioLiquido;
-	}
 
 	public Funcionarios(String nome, String cpf) {
 		this.desc = new CalculaDescontos();

@@ -70,7 +70,6 @@ public class CalculaDescontos {
 				}
 			}
 		}
-		boolean check = false;
 	}
 
 	public void DescontoTransporte(Funcionarios f) {
@@ -87,8 +86,8 @@ public class CalculaDescontos {
 	public void getSalarioLiquido(Funcionarios f) {
 		if (inss > 0) {
 			double Salario = f.getSalario();
-			f.setSalarioLiquido(((Salario - inss) - vt) + saude);
-			System.out.println("O seu salário liquido é de " + formatador.format(f.getSalarioLiquido()));
+			double salarioLiquido = (Salario - inss - vt) + saude;			
+			System.out.println("O seu salário liquido é de " + formatador.format(salarioLiquido));
 		} else {
 			System.out.println("Você deve acionar seu Inss para ter acesso ao seu salário liquido");
 		}
