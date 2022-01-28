@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"br.com.PrimeiroProjeto.Supermercado.domain"},{"l":"br.com.PrimeiroProjeto.Supermercado.interfaces"},{"l":"br.com.PrimeiroProjeto.Supermercado.testes"},{"l":"br.com.PrimeiroProjeto.Supermercado.utils"}];updateSearchResults();
