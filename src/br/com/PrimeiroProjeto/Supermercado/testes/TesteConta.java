@@ -7,8 +7,8 @@ public class TesteConta {
 	public static void main(String[] args) {
 		try {
 		
-			Gerente g = new Gerente();
-			System.out.println(g.getCpf());
+
+			
 		  //Escreva seu código aqui
 		  
 		  

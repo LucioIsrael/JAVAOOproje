@@ -27,7 +27,9 @@ public abstract class Funcionarios {
 	}
 	
 	public void setNome(String nome) {
-		this.nome = nome;
+		String nomeUpper = nome.toUpperCase();
+		this.nome = nomeUpper;
+
 	}
 		
 	public String getNome() {
@@ -38,7 +40,8 @@ public abstract class Funcionarios {
 	}
 	
 	public void setCpf(String cpf) {
-		this.cpf = cpf;
+		String cpfSemEspaco = cpf.trim();
+		this.cpf = cpfSemEspaco;
 	}
 		
 	public String getCpf() {

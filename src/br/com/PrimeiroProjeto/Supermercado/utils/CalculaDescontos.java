@@ -94,10 +94,10 @@ public class CalculaDescontos {
 	/**
 	 * Criei este getter para puxar o salário liquido dos funcionarios
 	 * eu não soube colocar ela em outro local então introduzi na classe de
-	 * calcular
+	 * calcular.
 	 * 
 	 * 
-	 * Se eu fosse recriar esse código provavelmente teria criado uma classe separada
+	 * Se por acaso eu fosse recriar esse código provavelmente teria criado uma classe separada
 	 * usando o calcula desconto como classe mãe para puxar as variaveis
 	 * e tentar realizar o calculo.
 	 * 
