@@ -54,5 +54,10 @@ public abstract class Funcionarios {
 	public double getSalario() {
 		return this.salario;
 	}
+	
+	public String toString() {
+		return "Nome: " + this.nome + ", CPF: " + this.cpf + ", Salário: "
+				+ getSalario();
+	}
 
 }
